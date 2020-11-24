@@ -28,6 +28,7 @@ class BookmarkList extends Component {
           {bookmarks.map(bookmark =>
             <BookmarkItem
               key={bookmark.id}
+              history={this.props.history}
               {...bookmark}
             />
           )}
